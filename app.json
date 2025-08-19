@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Zeroapp",
+    "slug": "Zeroapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Zero.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    
+    "splash": {
+      "image": "./assets/images/newss.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#fff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "zero.zero",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/zeroBlue.png",
+        "backgroundColor": "#ffffff",
+        "resizeMode": "contain"
+      },
+      "package": "zero.zero"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/zeroBlue.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+        }
+      ],
+      "expo-font",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "API_URL": "https://zero-psi.vercel.app",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2e239068-a1c0-4879-8faa-79c10ad8c1d5"
+      }
+    }
+  }
+}
